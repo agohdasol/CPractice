@@ -38,8 +38,29 @@ void gets01(void)
   return;
 }
 
+void scanfint01(void)
+{
+  int nAge = 0;
+  printf("나이를 입력하세요 : ");
+  scanf("%d", &nAge);
+  printf("당신의 나이는 %d세 입니다.\n", nAge);
+  return;
+}
+
+void scanfagename(void)
+{
+  int nAge = 0;
+  char name[32] = { 0 };
+  printf("나이를 입력하세요 : ");
+  scanf("%d", &nAge);
+  printf("이름을 입력하세요 : ");
+  scanf("%s", &name);
+  printf("당신의 나이는 %d세, 이름은 %s 입니다.\n", nAge, name);
+  return;
+}
+
 int main(void)
 {
-  gets01();
+  scanfagename();
   return 0;
 }
